@@ -6,3 +6,16 @@ mv php.ini-development php.ini
 setx PATH "$env:PATH;C:\php"
 
 php -v
+
+
+
+
+INSERT INTO users (name, email, password, role, created_at, updated_at)
+VALUES (
+  'Admin',
+  'admin@mail.com',
+  '$2y$12$xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  'admin',
+  NOW(),
+  NOW()
+);
